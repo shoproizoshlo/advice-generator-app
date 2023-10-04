@@ -122,6 +122,10 @@ main {
   position: relative;
 }
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 1145px;
   margin: 0 auto;
   padding: 0 15px;
@@ -159,8 +163,8 @@ main {
   background-color: var(--primary-neon-green);
   overflow: hidden;
   position: relative;
-  top: 72px;
-  left: 195px;
+  top: 69px;
+  left: 0px;
   transition: all 0.5s ease;
 }
 .icon-dice:hover,
@@ -175,8 +179,8 @@ main {
   object-fit: contain;
   object-position: center;
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 29%;
+  left: 29%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -191,9 +195,18 @@ main {
 }
 @media screen and (max-width: 767px) {
   .container {
+    display: block;
     max-width: none;
-    padding: 0 30px;
+    padding: 0 10px;
     margin: 0;
+  }
+  .advice {
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+  }
+  .advice-text {
+    font-size: 24px;
   }
 }
 /* footer */

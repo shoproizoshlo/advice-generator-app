@@ -12,6 +12,9 @@
       href="./images/favicon-32x32.png"
     />
 
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <title>Frontend Mentor | Advice generator app</title>
 
     <!-- bootstrap -->
@@ -28,13 +31,16 @@
   <body>
     <main>
       <div class="wrapper d-flex">
-        <div
-          class="container d-flex flex-column align-items-center justify-content-center"
-        >
+        <div class="container">
           <div class="advice">
-            <p class="advice-id">Advice #<!-- Advice ID goes here --></p>
+            <p class="advice-id">
+              Advice #<span id="advice-id"></span
+              ><!-- Advice ID goes here -->
+            </p>
 
-            <p class="advice-text"><!-- Advice text goes here -->"</p>
+            <p class="advice-text" id="advice-text">
+              <!-- Advice text goes here -->
+            </p>
 
             <!-- For automatic picture replacement -->
             <picture class="divider">
@@ -46,9 +52,9 @@
               <img src="./images/pattern-divider-desktop.svg" alt="" />
             </picture>
 
-            <div class="icon-dice">
+            <button id="button" class="icon-dice">
               <img src="./images/icon-dice.svg" alt="icon-dice" />
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -68,5 +74,8 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!-- script.js -->
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
