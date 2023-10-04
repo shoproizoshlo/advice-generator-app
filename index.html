@@ -22,39 +22,33 @@
       crossorigin="anonymous"
     />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <!-- style.css -->
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <main>
-      <div class="wrapper">
+      <div class="wrapper d-flex">
         <div
           class="container d-flex flex-column align-items-center justify-content-center"
         >
-          <p class="advice-id">Advice #<!-- Advice ID goes here --></p>
+          <div class="advice">
+            <p class="advice-id">Advice #<!-- Advice ID goes here --></p>
 
-          <p class="advice-text">"<!-- Advice text goes here -->"</p>
+            <p class="advice-text"><!-- Advice text goes here -->"</p>
 
-          <!-- For automatic picture replacement -->
-          <picture>
-            <source
-              srcset="./images/pattern-divider-mobile.svg"
-              type="image/jpg"
-              media="(max-width:767px)"
-            />
-            <img src="./images/pattern-divider-desktop.svg" alt="" />
-          </picture>
+            <!-- For automatic picture replacement -->
+            <picture class="divider">
+              <source
+                srcset="./images/pattern-divider-mobile.svg"
+                type="image/jpg"
+                media="(max-width:767px)"
+              />
+              <img src="./images/pattern-divider-desktop.svg" alt="" />
+            </picture>
 
-          <div class="icon-dice">
-            <img src="./images/icon-dice.svg" alt="icon-dice" />
+            <div class="icon-dice">
+              <img src="./images/icon-dice.svg" alt="icon-dice" />
+            </div>
           </div>
         </div>
       </div>

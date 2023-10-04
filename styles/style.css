@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+/* ### 
+--primary
+
+--primary-light-cyan: hsl(193, 38%, 86%);
+--primary-neon-green: hsl(150, 100%, 66%);
+
+--neutral-grayish-blue: hsl(217, 19%, 38%);
+--neutral-dark-crayish-blue: hsl(217, 19%, 24%);
+--neutral-dark-blue: hsl(218, 23%, 16%);
+
+## Typography
+
+### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800
+ */
+:root {
+  --primary-light-cyan: hsl(193, 38%, 86%);
+  --primary-neon-green: hsl(150, 100%, 66%);
+
+  --neutral-grayish-blue: hsl(217, 19%, 38%);
+  --neutral-dark-crayish-blue: hsl(217, 19%, 24%);
+  --neutral-dark-blue: hsl(218, 23%, 16%);
+}
+/*Setting to zero*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+/* main take up the whole screen */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--neutral-dark-blue);
+}
+main {
+  flex: 1 1 auto;
+}
+
+/* page container */
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+}
+.container {
+  max-width: 1145px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.advice {
+  margin: 20px;
+  padding: 40px;
+  width: 530px;
+  border-radius: 20px;
+  background-color: var(--neutral-dark-crayish-blue);
+}
+.advice-id {
+  color: var(--primary-neon-green);
+}
+.advice-text {
+  color: var(--primary-light-cyan);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+/* for responsive images */
+.divider img {
+  position: relative;
+  top: 30px;
+  left: 0;
+}
+.icon-dice {
+  padding: 0;
+  flex: 0 0 33.3333%;
+  height: 61px;
+  width: 61px;
+  border-radius: 50px;
+  background-color: var(--primary-neon-green);
+  overflow: hidden;
+  position: relative;
+  top: 72px;
+  left: 195px;
+  transition: all 0.5s ease;
+}
+.icon-dice:hover,
+.icon-dice:active {
+  cursor: pointer;
+  box-shadow: 0px 0px 27px 14px rgba(81, 255, 168, 0.4);
+}
+
+.icon-dice img {
+  width: 45%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: none;
+    padding: 0 30px;
+    margin: 0;
+  }
+}
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
