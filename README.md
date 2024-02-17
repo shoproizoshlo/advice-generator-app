@@ -44,3 +44,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@shoproizoshlo](https://www.frontendmentor.io/profile/shoproizoshlo)
+- X - [@suereact](https://www.x.com/suereact)
